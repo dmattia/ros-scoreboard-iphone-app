@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F160A76C1C99D1C3002B9BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */; };
+		F160A76E1C99D1C3002B9BB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160A76D1C99D1C3002B9BB9 /* ViewController.swift */; };
+		F160A7711C99D1C3002B9BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160A76F1C99D1C3002B9BB9 /* Main.storyboard */; };
+		F160A7731C99D1C3002B9BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160A7721C99D1C3002B9BB9 /* Assets.xcassets */; };
+		F160A7761C99D1C3002B9BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160A7741C99D1C3002B9BB9 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F160A7681C99D1C3002B9BB9 /* ros-scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ros-scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F160A76D1C99D1C3002B9BB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F160A7701C99D1C3002B9BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F160A7721C99D1C3002B9BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F160A7751C99D1C3002B9BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F160A7771C99D1C3002B9BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F160A7651C99D1C3002B9BB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F160A75F1C99D1C3002B9BB9 = {
+			isa = PBXGroup;
+			children = (
+				F160A76A1C99D1C3002B9BB9 /* ros-scoreboard */,
+				F160A7691C99D1C3002B9BB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F160A7691C99D1C3002B9BB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F160A7681C99D1C3002B9BB9 /* ros-scoreboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F160A76A1C99D1C3002B9BB9 /* ros-scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */,
+				F160A76D1C99D1C3002B9BB9 /* ViewController.swift */,
+				F160A76F1C99D1C3002B9BB9 /* Main.storyboard */,
+				F160A7721C99D1C3002B9BB9 /* Assets.xcassets */,
+				F160A7741C99D1C3002B9BB9 /* LaunchScreen.storyboard */,
+				F160A7771C99D1C3002B9BB9 /* Info.plist */,
+			);
+			path = "ros-scoreboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F160A7671C99D1C3002B9BB9 /* ros-scoreboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F160A77A1C99D1C3002B9BB9 /* Build configuration list for PBXNativeTarget "ros-scoreboard" */;
+			buildPhases = (
+				F160A7641C99D1C3002B9BB9 /* Sources */,
+				F160A7651C99D1C3002B9BB9 /* Frameworks */,
+				F160A7661C99D1C3002B9BB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ros-scoreboard";
+			productName = "ros-scoreboard";
+			productReference = F160A7681C99D1C3002B9BB9 /* ros-scoreboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F160A7601C99D1C3002B9BB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "David Mattia";
+				TargetAttributes = {
+					F160A7671C99D1C3002B9BB9 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F160A7631C99D1C3002B9BB9 /* Build configuration list for PBXProject "ros-scoreboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F160A75F1C99D1C3002B9BB9;
+			productRefGroup = F160A7691C99D1C3002B9BB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F160A7671C99D1C3002B9BB9 /* ros-scoreboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F160A7661C99D1C3002B9BB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F160A7761C99D1C3002B9BB9 /* LaunchScreen.storyboard in Resources */,
+				F160A7731C99D1C3002B9BB9 /* Assets.xcassets in Resources */,
+				F160A7711C99D1C3002B9BB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F160A7641C99D1C3002B9BB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F160A76E1C99D1C3002B9BB9 /* ViewController.swift in Sources */,
+				F160A76C1C99D1C3002B9BB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F160A76F1C99D1C3002B9BB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F160A7701C99D1C3002B9BB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F160A7741C99D1C3002B9BB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F160A7751C99D1C3002B9BB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F160A7781C99D1C3002B9BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F160A7791C99D1C3002B9BB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F160A77B1C99D1C3002B9BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ros-scoreboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.David-mattia.ros-scoreboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F160A77C1C99D1C3002B9BB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ros-scoreboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.David-mattia.ros-scoreboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F160A7631C99D1C3002B9BB9 /* Build configuration list for PBXProject "ros-scoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F160A7781C99D1C3002B9BB9 /* Debug */,
+				F160A7791C99D1C3002B9BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F160A77A1C99D1C3002B9BB9 /* Build configuration list for PBXNativeTarget "ros-scoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F160A77B1C99D1C3002B9BB9 /* Debug */,
+				F160A77C1C99D1C3002B9BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F160A7601C99D1C3002B9BB9 /* Project object */;
+}
