@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66DDA4E4C25488C77A8076B0 /* Pods_ros_scoreboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365457D7ED5FA1AC08A14A4F /* Pods_ros_scoreboard.framework */; };
 		F160A76C1C99D1C3002B9BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */; };
 		F160A76E1C99D1C3002B9BB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160A76D1C99D1C3002B9BB9 /* ViewController.swift */; };
 		F160A7711C99D1C3002B9BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160A76F1C99D1C3002B9BB9 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EDBF962E886557347D568E0 /* Pods-ros-scoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ros-scoreboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ros-scoreboard/Pods-ros-scoreboard.release.xcconfig"; sourceTree = "<group>"; };
+		365457D7ED5FA1AC08A14A4F /* Pods_ros_scoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ros_scoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A058F08A4234A1B3BA0D15BE /* Pods-ros-scoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ros-scoreboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ros-scoreboard/Pods-ros-scoreboard.debug.xcconfig"; sourceTree = "<group>"; };
 		F160A7681C99D1C3002B9BB9 /* ros-scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ros-scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F160A76D1C99D1C3002B9BB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		F160A7721C99D1C3002B9BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F160A7751C99D1C3002B9BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F160A7771C99D1C3002B9BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EB63831C99E01900C67D55 /* ros-scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ros-scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DDA4E4C25488C77A8076B0 /* Pods_ros_scoreboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EBCD4AEF1747C94C57A1ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365457D7ED5FA1AC08A14A4F /* Pods_ros_scoreboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F160A75F1C99D1C3002B9BB9 = {
 			isa = PBXGroup;
 			children = (
 				F160A76A1C99D1C3002B9BB9 /* ros-scoreboard */,
 				F160A7691C99D1C3002B9BB9 /* Products */,
+				FF7775E7E1A74CA2ED03275C /* Pods */,
+				4EBCD4AEF1747C94C57A1ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F160A76B1C99D1C3002B9BB9 /* AppDelegate.swift */,
+				F1EB63831C99E01900C67D55 /* ros-scoreboard-Bridging-Header.h */,
 				F160A76D1C99D1C3002B9BB9 /* ViewController.swift */,
 				F160A76F1C99D1C3002B9BB9 /* Main.storyboard */,
 				F160A7721C99D1C3002B9BB9 /* Assets.xcassets */,
@@ -64,6 +81,15 @@
 			path = "ros-scoreboard";
 			sourceTree = "<group>";
 		};
+		FF7775E7E1A74CA2ED03275C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A058F08A4234A1B3BA0D15BE /* Pods-ros-scoreboard.debug.xcconfig */,
+				0EDBF962E886557347D568E0 /* Pods-ros-scoreboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F160A77A1C99D1C3002B9BB9 /* Build configuration list for PBXNativeTarget "ros-scoreboard" */;
 			buildPhases = (
+				249C529D3222C3149463C38D /* Check Pods Manifest.lock */,
 				F160A7641C99D1C3002B9BB9 /* Sources */,
 				F160A7651C99D1C3002B9BB9 /* Frameworks */,
 				F160A7661C99D1C3002B9BB9 /* Resources */,
+				D70906B0B32F3F49F3204459 /* Embed Pods Frameworks */,
+				5E7C143D6FAF67E087362A69 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249C529D3222C3149463C38D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7C143D6FAF67E087362A69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ros-scoreboard/Pods-ros-scoreboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D70906B0B32F3F49F3204459 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ros-scoreboard/Pods-ros-scoreboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F160A7641C99D1C3002B9BB9 /* Sources */ = {
@@ -245,6 +322,7 @@
 		};
 		F160A77B1C99D1C3002B9BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A058F08A4234A1B3BA0D15BE /* Pods-ros-scoreboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ros-scoreboard/Info.plist";
@@ -256,6 +334,7 @@
 		};
 		F160A77C1C99D1C3002B9BB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDBF962E886557347D568E0 /* Pods-ros-scoreboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ros-scoreboard/Info.plist";
@@ -284,6 +363,7 @@
 				F160A77C1C99D1C3002B9BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
