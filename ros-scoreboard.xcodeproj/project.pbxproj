@@ -13,6 +13,7 @@
 		F160A7711C99D1C3002B9BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160A76F1C99D1C3002B9BB9 /* Main.storyboard */; };
 		F160A7731C99D1C3002B9BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160A7721C99D1C3002B9BB9 /* Assets.xcassets */; };
 		F160A7761C99D1C3002B9BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160A7741C99D1C3002B9BB9 /* LaunchScreen.storyboard */; };
+		F1EB63851C9A3AF500C67D55 /* playerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB63841C9A3AF500C67D55 /* playerTabelViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F160A7751C99D1C3002B9BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F160A7771C99D1C3002B9BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EB63831C99E01900C67D55 /* ros-scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ros-scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1EB63841C9A3AF500C67D55 /* playerTabelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerTabelViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F1EB63831C99E01900C67D55 /* ros-scoreboard-Bridging-Header.h */,
 				F160A76D1C99D1C3002B9BB9 /* ViewController.swift */,
 				F160A76F1C99D1C3002B9BB9 /* Main.storyboard */,
+				F1EB63841C9A3AF500C67D55 /* playerTabelViewCell.swift */,
 				F160A7721C99D1C3002B9BB9 /* Assets.xcassets */,
 				F160A7741C99D1C3002B9BB9 /* LaunchScreen.storyboard */,
 				F160A7771C99D1C3002B9BB9 /* Info.plist */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F160A76E1C99D1C3002B9BB9 /* ViewController.swift in Sources */,
+				F1EB63851C9A3AF500C67D55 /* playerTabelViewCell.swift in Sources */,
 				F160A76C1C99D1C3002B9BB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
