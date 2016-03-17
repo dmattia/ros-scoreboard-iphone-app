@@ -28,15 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gha-B3-qxK">
-                                                    <rect key="frame" x="48" y="45" width="30" height="30"/>
-                                                    <state key="normal" title="-"/>
-                                                    <connections>
-                                                        <action selector="minusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUA-a0-rFY"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvL-tR-97y">
-                                                    <rect key="frame" x="300" y="45" width="30" height="30"/>
+                                                    <rect key="frame" x="304" y="36" width="42" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                     <state key="normal" title="+"/>
                                                     <connections>
                                                         <action selector="plusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtU-PT-4d2"/>
@@ -48,6 +42,14 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gha-B3-qxK">
+                                                    <rect key="frame" x="26" y="36" width="44" height="46.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                    <state key="normal" title="-"/>
+                                                    <connections>
+                                                        <action selector="minusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUA-a0-rFY"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
