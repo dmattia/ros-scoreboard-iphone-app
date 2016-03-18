@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2d0-TE-kDD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="594"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreCell" rowHeight="120" id="KTy-7y-2LM" customClass="playerTabelViewCell" customModule="ros_scoreboard" customModuleProvider="target">
@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvL-tR-97y">
-                                                    <rect key="frame" x="304" y="36" width="42" height="47"/>
+                                                    <rect key="frame" x="289" y="8" width="86" height="103.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                     <state key="normal" title="+"/>
                                                     <connections>
@@ -38,12 +38,12 @@
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="PWy-bm-aXV">
                                                     <rect key="frame" x="86" y="28" width="201" height="64"/>
-                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gha-B3-qxK">
-                                                    <rect key="frame" x="26" y="36" width="44" height="46.5"/>
+                                                    <rect key="frame" x="0.0" y="6.5" width="83" height="105"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                     <state key="normal" title="-"/>
                                                     <connections>
