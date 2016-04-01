@@ -11,16 +11,25 @@ import Firebase
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var difficultyButton: UIButton!
     @IBOutlet weak var playerTableView: UITableView!
+    
     private var players : Dictionary<String, Int>?
-    let ref = Firebase(url:"https://ros.firebaseio.com")
+    let scoreRef = Firebase(url:"https://ros.firebaseio.com/scores")
+    let difficultyRef = Firebase(url:"https://ros.firebaseio.com/difficulty")
+
     let dictNames = ["Blue Player", "Green Player", "Red Player", "Yellow Player"]
     let colors = [UIColor.blueColor(), UIColor.greenColor(), UIColor.redColor(), UIColor.yellowColor()]
+    let difficulties: [String: UIColor] = [
+        "Easy": UIColor.greenColor(),
+        "Medium": UIColor.grayColor(),
+        "Hard": UIColor.redColor()
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref.observeEventType(.Value, withBlock: {
+        scoreRef.observeEventType(.Value, withBlock: {
             snapshot in
             self.players = snapshot.value as? Dictionary<String, Int>
             self.reloadViews()
@@ -42,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 120
+        return 100
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -60,6 +69,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    func difficultyToValue(difficulty: String) -> Int {
+        if difficulty == "Easy" {
+            return 0
+        } else if difficulty == "Medium" {
+            return 1
+        } else {
+            return 2
+        }
+    }
+    
+    @IBAction func difficultyButtonClicked(sender: AnyObject) {
+        if let currentDifficulty = self.difficultyButton.titleLabel?.text {
+            var nextDifficulty = "Easy"
+            if currentDifficulty == "Easy" {
+                nextDifficulty = "Medium"
+            } else if currentDifficulty == "Medium" {
+                nextDifficulty = "Hard"
+            }
+
+            difficultyRef.setValue(difficultyToValue(nextDifficulty))
+            
+            self.difficultyButton.setTitle(nextDifficulty, forState: .Normal)
+            self.difficultyButton.backgroundColor = difficulties[nextDifficulty]
+        }
+    }
+    
     @IBAction func resetPresset(sender: AnyObject) {
         while self.players!.isEmpty {
             self.players?.popFirst()
@@ -67,14 +102,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         for name in dictNames {
             self.players![name] = 0
         }
-        ref.setValue(players)
+        scoreRef.setValue(players)
     }
     
     @IBAction func minusClicked(sender: AnyObject) {
         let row = sender.tag
         if self.players![dictNames[row]] > 0 {
             self.players![dictNames[row]] = self.players![dictNames[row]]! - 1
-            ref.setValue(players)
+            scoreRef.setValue(players)
         }
     }
     
@@ -82,7 +117,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let row = sender.tag
         if self.players![dictNames[row]] < 5 {
             self.players![dictNames[row]] = self.players![dictNames[row]]! + 1
-            ref.setValue(players)
+            scoreRef.setValue(players)
         }
     }
 }
